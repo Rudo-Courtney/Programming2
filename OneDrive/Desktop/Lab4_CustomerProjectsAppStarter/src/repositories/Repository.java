@@ -11,6 +11,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.function.Predicate;
 import java.util.logging.Level;
@@ -26,8 +27,8 @@ public class Repository {
     static char DELIMITER=',';
     
     public Repository() {
-        this.items = new ArrayList<>();
-        //this.items = new LinkedList<>();        
+        //this.items = new ArrayList<>();
+        this.items = new LinkedList<>();        
     }
     
     public Repository(List<Customer> items) {        
